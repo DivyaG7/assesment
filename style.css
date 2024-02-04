@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 0 20rem;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 8px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.tab-content {
+    display: none;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem 6rem;
+}
+
+.product {
+    background-color: #fff;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.product h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.active {
+    background-color: black;
+    color: #fff;
+  }
+
+.img{
+    height: 50vh;
+    width: 20vw;
+}
+
+.topic{
+    display: flex;
+}
+
+.topic ul{
+    margin-top: 25px;
+}
+
+
+.price{
+    display: flex;
+    column-gap: 30px;
+    font-size:medium;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.discount-percentage{
+    color: red;
+}
+.original-price {
+    text-decoration: line-through;
+    color:darkgrey;
+  }
+  
+  .discounted-price {
+    color: black; 
+  }
+  
+
+button{
+    border: none;
+    margin-top: 10px;
+    padding: 1rem 7rem;
+    font-size: smaller;
+    font-weight: 600;
+    color: #fff;
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .tabs {
+        margin: 0 1rem; 
+    }
+
+    .product-list {
+        margin: 1rem; 
+    }
+
+    .img{
+        height: 30vh;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .img{
+        height: 25vh;
+        width: 55vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tabs {
+        margin: 0 5rem; 
+    }
+
+    .product-list {
+        margin: 1rem; 
+    }
+
+    .img{
+        height: 30vh;
+        width: 30vw;
+    }
+}
+
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .tabs {
+        margin: 0 5rem; 
+    }
+
+    .product-list {
+        margin: 1rem; 
+    }
+
+    .img{
+        height: 30vh;
+        width: 30vw;
+    }
+}

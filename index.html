@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>SELECT YOUR CHOICE</h1>
+    </header>
+
+    <!-- Tabs for Men, Women, and Kids -->
+    <div class="tabs">
+        <div class="tab" onclick="showTab('men')">Men</div>
+        <div class="tab" onclick="showTab('women')">Women</div>
+        <div class="tab" onclick="showTab('kids')">Kids</div>
+    </div>
+
+    <!-- Container to display products -->
+    <div id="men" class="tab-content">
+        <ul class="product-list" id="menProductList"></ul>
+    </div>
+
+    <div id="women" class="tab-content">
+        <ul class="product-list" id="womenProductList"></ul>
+    </div>
+
+    <div id="kids" class="tab-content">
+        <ul class="product-list" id="kidsProductList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
