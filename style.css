@@ -116,14 +116,14 @@ button{
     }
 
     .img{
-        height: 45vh;
+        height: 30vh;
         width: 40vw;
     }
 }
 
 @media screen and (max-width:500px) {
     .img{
-        height: 25vh;
+        height: 45vh;
         width: 55vw;
     }
 }
